@@ -27,38 +27,116 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        btn_Limpiar = new javax.swing.JButton();
+        Btn_Borrar = new javax.swing.JButton();
+        Btn_Porcentaje = new javax.swing.JButton();
+        Btn_Divicion = new javax.swing.JButton();
+        Btn_Siete = new javax.swing.JButton();
+        Btn_Ocho = new javax.swing.JButton();
+        Btn_Nueve = new javax.swing.JButton();
+        Btn_Multiplicacion = new javax.swing.JButton();
+        Btn_Cuatro = new javax.swing.JButton();
+        Btn_Cinco = new javax.swing.JButton();
+        Btn_Seis = new javax.swing.JButton();
+        Btn_Resta = new javax.swing.JButton();
+        Btn_Uno = new javax.swing.JButton();
+        Btn_Dos = new javax.swing.JButton();
+        Btn_Tres = new javax.swing.JButton();
+        Btn_Suma = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        Btn_Cero = new javax.swing.JButton();
+        Btn_Punto = new javax.swing.JButton();
+        Btn_Igual = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        pantalla = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 444, Short.MAX_VALUE)
-        );
+        jPanel1.setLayout(new java.awt.GridLayout(0, 4));
+
+        btn_Limpiar.setText("C");
+        jPanel1.add(btn_Limpiar);
+
+        Btn_Borrar.setText("Borrar");
+        jPanel1.add(Btn_Borrar);
+
+        Btn_Porcentaje.setText("%");
+        jPanel1.add(Btn_Porcentaje);
+
+        Btn_Divicion.setText("/");
+        jPanel1.add(Btn_Divicion);
+
+        Btn_Siete.setText("7");
+        jPanel1.add(Btn_Siete);
+
+        Btn_Ocho.setText("8");
+        jPanel1.add(Btn_Ocho);
+
+        Btn_Nueve.setText("9");
+        jPanel1.add(Btn_Nueve);
+
+        Btn_Multiplicacion.setText("x");
+        jPanel1.add(Btn_Multiplicacion);
+
+        Btn_Cuatro.setText("4");
+        jPanel1.add(Btn_Cuatro);
+
+        Btn_Cinco.setText("5");
+        jPanel1.add(Btn_Cinco);
+
+        Btn_Seis.setText("6");
+        Btn_Seis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_SeisActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Btn_Seis);
+
+        Btn_Resta.setText("-");
+        jPanel1.add(Btn_Resta);
+
+        Btn_Uno.setText("1");
+        jPanel1.add(Btn_Uno);
+
+        Btn_Dos.setText("2");
+        jPanel1.add(Btn_Dos);
+
+        Btn_Tres.setText("3");
+        jPanel1.add(Btn_Tres);
+
+        Btn_Suma.setText("+");
+        jPanel1.add(Btn_Suma);
+        jPanel1.add(jButton17);
+
+        Btn_Cero.setText("0");
+        jPanel1.add(Btn_Cero);
+
+        Btn_Punto.setText(".");
+        jPanel1.add(Btn_Punto);
+
+        Btn_Igual.setText("=");
+        jPanel1.add(Btn_Igual);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
         jPanel2.setLayout(new java.awt.BorderLayout());
 
-        jLabel1.setFont(new java.awt.Font("MS UI Gothic", 1, 48)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel1.setText("0");
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jLabel1.setPreferredSize(new java.awt.Dimension(37, 50));
-        jPanel2.add(jLabel1, java.awt.BorderLayout.CENTER);
+        pantalla.setFont(new java.awt.Font("MS UI Gothic", 1, 48)); // NOI18N
+        pantalla.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        pantalla.setText("0");
+        pantalla.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        pantalla.setPreferredSize(new java.awt.Dimension(37, 50));
+        jPanel2.add(pantalla, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Btn_SeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SeisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Btn_SeisActionPerformed
 
     /**
      * @param args the command line arguments
@@ -96,8 +174,28 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton Btn_Borrar;
+    private javax.swing.JButton Btn_Cero;
+    private javax.swing.JButton Btn_Cinco;
+    private javax.swing.JButton Btn_Cuatro;
+    private javax.swing.JButton Btn_Divicion;
+    private javax.swing.JButton Btn_Dos;
+    private javax.swing.JButton Btn_Igual;
+    private javax.swing.JButton Btn_Multiplicacion;
+    private javax.swing.JButton Btn_Nueve;
+    private javax.swing.JButton Btn_Ocho;
+    private javax.swing.JButton Btn_Porcentaje;
+    private javax.swing.JButton Btn_Punto;
+    private javax.swing.JButton Btn_Resta;
+    private javax.swing.JButton Btn_Seis;
+    private javax.swing.JButton Btn_Siete;
+    private javax.swing.JButton Btn_Suma;
+    private javax.swing.JButton Btn_Tres;
+    private javax.swing.JButton Btn_Uno;
+    private javax.swing.JButton btn_Limpiar;
+    private javax.swing.JButton jButton17;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel pantalla;
     // End of variables declaration//GEN-END:variables
 }
