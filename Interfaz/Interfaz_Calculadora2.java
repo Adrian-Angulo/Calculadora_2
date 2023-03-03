@@ -47,6 +47,19 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
         }
         return pant;
     }
+    public static boolean existepunto(String cadena){
+        boolean resultado; 
+        resultado = false;
+        
+        for (int i=0;i<cadena.length();i++){
+            if(cadena.substring(i,i+1).equals(".")){
+                resultado = true;
+                break;
+            }
+        }
+        return resultado;
+    }
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -343,7 +356,16 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn_IgualActionPerformed
 
     private void Btn_PuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PuntoActionPerformed
-        pantalla.setText(Concatenar("."));
+        String cadena; 
+        cadena = pantalla.getText();
+        if (cadena.length()<=0){
+            pantalla.setText("0.");
+            
+        }else{
+            if(!existepunto(pantalla.getText())){
+                pantalla.setText(pantalla.getText()+".");
+            }
+        }
         
    
     }//GEN-LAST:event_Btn_PuntoActionPerformed
