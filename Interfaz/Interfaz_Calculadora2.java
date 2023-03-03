@@ -3,18 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Interfaz;
+import Controlador.Operaciones;
 
 /**
  *
  * @author Adrian Castillo
  */
 public class Interfaz_Calculadora2 extends javax.swing.JFrame {
-
+    private Operaciones operaciones;
+    private int numero1;
     /**
      * Creates new form Interfaz_Calculadora2
      */
     public Interfaz_Calculadora2() {
         initComponents();
+        operaciones=new Operaciones();
         setLocationRelativeTo(null);
     }
 
@@ -304,6 +307,8 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
 
     private void Btn_SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SumaActionPerformed
         pantalla.setText(Concatenar("+"));
+        int numero2= Integer.parseInt(pantalla.getText());
+        pantalla.setText(operaciones.Sumar(numero1, numero2));
     }//GEN-LAST:event_Btn_SumaActionPerformed
 
     private void Btn_IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_IgualActionPerformed
