@@ -12,8 +12,8 @@ public class Operaciones {
     
 
     public String evaluar(String string) {
-        float resultado;
-        float numeros [] = new float[100];
+        int resultado;
+        int numeros [] = new int[100];
         if(string.contains("+")){
             String[] partes = string.split("\\+");
             for (int i = 0; i < partes.length; i++){
