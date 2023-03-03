@@ -67,6 +67,7 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
         Btn_Cero = new javax.swing.JButton();
         Btn_Punto = new javax.swing.JButton();
         Btn_Igual = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         pantalla = new javax.swing.JLabel();
 
@@ -227,6 +228,15 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
         });
         jPanel1.add(Btn_Igual);
 
+        jButton1.setText("regresar");
+        jButton1.setPreferredSize(new java.awt.Dimension(300, 23));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
@@ -324,6 +334,12 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
         pantalla.setText(Concatenar("0"));
     }//GEN-LAST:event_Btn_CeroActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new MenuPrincipal().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -349,6 +365,7 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Tres;
     private javax.swing.JButton Btn_Uno;
     private javax.swing.JButton btn_Limpiar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton17;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
