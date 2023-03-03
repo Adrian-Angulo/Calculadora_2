@@ -39,51 +39,81 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="C"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_LimpiarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Borrar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Borrar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_BorrarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Porcentaje">
           <Properties>
             <Property name="text" type="java.lang.String" value="%"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_PorcentajeActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Divicion">
           <Properties>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_DivicionActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Siete">
           <Properties>
             <Property name="text" type="java.lang.String" value="7"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_SieteActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Ocho">
           <Properties>
             <Property name="text" type="java.lang.String" value="8"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_OchoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Nueve">
           <Properties>
             <Property name="text" type="java.lang.String" value="9"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_NueveActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Multiplicacion">
           <Properties>
             <Property name="text" type="java.lang.String" value="x"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_MultiplicacionActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Cuatro">
           <Properties>
             <Property name="text" type="java.lang.String" value="4"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_CuatroActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Cinco">
           <Properties>
             <Property name="text" type="java.lang.String" value="5"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_CincoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Seis">
           <Properties>
@@ -97,26 +127,41 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_RestaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Uno">
           <Properties>
             <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_UnoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Dos">
           <Properties>
             <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_DosActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Tres">
           <Properties>
             <Property name="text" type="java.lang.String" value="3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_TresActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Suma">
           <Properties>
             <Property name="text" type="java.lang.String" value="+"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_SumaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton17">
         </Component>
@@ -124,16 +169,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_CeroActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Punto">
           <Properties>
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_PuntoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Btn_Igual">
           <Properties>
             <Property name="text" type="java.lang.String" value="="/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_IgualActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
