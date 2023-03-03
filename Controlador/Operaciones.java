@@ -10,29 +10,50 @@ package Controlador;
  */
 public class Operaciones {
     
-        public String Sumar(int numero1, int numero2){
-        int resultado = numero1+numero2;
+
+    public String evaluar(String string) {
+        float resultado;
+        float numeros [] = new float[100];
+        if(string.contains("+")){
+            String[] partes = string.split("\\+");
+            for (int i = 0; i < partes.length; i++){
+            numeros[i]= Integer.parseInt(partes[i]);
+            }
+        resultado = numeros[0]+numeros[1];
         return resultado+"";
-        //return String.valueOf(resultado);
-    }
-    
-    public String Restar(int numero1, int numero2){
-        int resultado = numero1-numero2;
+        //System.out.println("la suma es"+resultado);
+        }
+        else if(string.contains("-")){
+            String[] partes = string.split("\\-");
+            for (int i = 0; i < partes.length; i++){
+            numeros[i]= Integer.parseInt(partes[i]);
+        }
+        resultado = numeros[0]-numeros[1];
         return resultado+"";
-        //return String.valueOf(resultado);
-    }
-    
-    public String Multiplicar(int numero1, int numero2){
-        int resultado = numero1*numero2;
+        //System.out.println("la resta es"+resultado);
+        }
+        else if(string.contains("x")){
+            String[] partes = string.split("x");
+            for (int i = 0; i < partes.length; i++){
+            numeros[i]= Integer.parseInt(partes[i]);
+        }
+        resultado = numeros[0]*numeros[1];
         return resultado+"";
-        //return String.valueOf(resultado);
-    }
-    
-    public String Dividir(int numero1, int numero2){
-        float resultado = numero1/numero2;
+        //System.out.println("la multiplicacion es"+resultado);
+        }
+        else if(string.contains("/")){
+            String[] partes = string.split("\\/");
+            for (int i = 0; i < partes.length; i++){
+            numeros[i]= Integer.parseInt(partes[i]);
+        }
+        resultado = numeros[0]/numeros[1];
         return resultado+"";
-        //return String.valueOf(resultado);
+        //System.out.println("la divicion es"+resultado);
+        }
+        else{
+            System.out.println("no existe valor");
+        }
+            return "";
         
-     
     }
 }

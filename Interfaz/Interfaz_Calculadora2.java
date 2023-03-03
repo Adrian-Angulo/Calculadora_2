@@ -4,21 +4,27 @@
  */
 package Interfaz;
 import Controlador.Operaciones;
-
 /**
  *
  * @author Adrian Castillo
  */
 public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     private Operaciones operaciones;
-    private int numero1;
+    private float numero1;
+    private float numero2;
+    private String resultado;
+    
     /**
      * Creates new form Interfaz_Calculadora2
      */
     public Interfaz_Calculadora2() {
+        /**ScriptEngineManager sem = new ScriptEngineManager();
+        ScriptEngine se = sem.getEngineByExtension("JavaScript");
+        * */
         initComponents();
         operaciones=new Operaciones();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -68,6 +74,7 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
         Btn_Punto = new javax.swing.JButton();
         Btn_Igual = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
+        pantalla2 = new javax.swing.JLabel();
         pantalla = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -229,15 +236,28 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
-        jPanel2.setLayout(new java.awt.BorderLayout());
+        jPanel2.setPreferredSize(new java.awt.Dimension(400, 90));
+        jPanel2.setLayout(new java.awt.GridLayout(2, 0));
 
-        pantalla.setFont(new java.awt.Font("MS UI Gothic", 1, 48)); // NOI18N
-        pantalla.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        pantalla2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        pantalla2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        pantalla2.setText("0");
+        pantalla2.setToolTipText("");
+        pantalla2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        pantalla2.setAlignmentY(0.0F);
+        pantalla2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        pantalla2.setInheritsPopupMenu(false);
+        pantalla2.setPreferredSize(new java.awt.Dimension(24, 20));
+        pantalla2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel2.add(pantalla2);
+
+        pantalla.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
+        pantalla.setToolTipText("");
         pantalla.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        pantalla.setPreferredSize(new java.awt.Dimension(37, 50));
-        jPanel2.add(pantalla, java.awt.BorderLayout.CENTER);
+        pantalla.setPreferredSize(new java.awt.Dimension(12, 25));
+        jPanel2.add(pantalla);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
@@ -307,17 +327,25 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
 
     private void Btn_SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SumaActionPerformed
         pantalla.setText(Concatenar("+"));
-        int numero2= Integer.parseInt(pantalla.getText());
-        pantalla.setText(operaciones.Sumar(numero1, numero2));
+        
+        
     }//GEN-LAST:event_Btn_SumaActionPerformed
 
     private void Btn_IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_IgualActionPerformed
-        pantalla.getText();
-        
+        pantalla.setText(operaciones.evaluar(pantalla.getText()));
+        /**try {
+        String resultado = se.eval(pantalla.getText()).toString();
+        pantalla.setText(resultado);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        **/
     }//GEN-LAST:event_Btn_IgualActionPerformed
 
     private void Btn_PuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PuntoActionPerformed
         pantalla.setText(Concatenar("."));
+        
+   
     }//GEN-LAST:event_Btn_PuntoActionPerformed
 
     private void Btn_CeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CeroActionPerformed
@@ -383,5 +411,6 @@ public class Interfaz_Calculadora2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel pantalla;
+    private javax.swing.JLabel pantalla2;
     // End of variables declaration//GEN-END:variables
 }
